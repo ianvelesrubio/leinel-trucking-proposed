@@ -1,0 +1,276 @@
+/* ---------COLORS--------- 
+ PRIMARY BASE: #299f31
+ PRIMARY SHADE: #218228
+
+ SECONDARY BASE: #96754b
+ SECONDARY SHADE: #765933
+
+ TERTIARY BASE: #f8d57b
+ TERTIARY TINT: #fff2d2
+ TERTIARY SHADE: #ffbe18
+
+
+ GRAY PRIMARY: #4e504c
+ GRAY TINT: #cdcdcd
+ GRAY SHADE: #3c3c3c
+
+*/
+/* ---------GLOBAL STYLES--------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+  color: #4e504c;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+a:link, a:visited {
+  color: #4e504c;
+}
+
+/* ---------COMPONENTS-------- */
+.leinel-logo-with-text {
+  width: 27rem;
+}
+.leinel-logo-sm {
+  width: 100px;
+  margin: 3rem auto;
+}
+.highlight {
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+.highlight-primary {
+  background-color: #299f31;
+  color: #ffffff;
+}
+.btn {
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+}
+.btn-primary:link, .btn-primary:visited {
+  border: 2px solid #299f31;
+  background-color: #299f31;
+  color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:active {
+  border: 2px solid #218228;
+  background-color: #218228;
+}
+.btn-primary-outline:link, .btn-primary-outline:visited {
+  border: 2px solid #299f31;
+  background-color: #ffffff;
+  color: #299f31;
+}
+.btn-primary-outline:hover, .btn-primary-outline:active {
+  border: 2px solid #218228;
+  color: #218228;
+}
+.btn-secondary:link, .btn-secondary:visited {
+  border: 2px solid #96754b;
+  background-color: #96754b;
+  color: #ffffff;
+}
+.btn-secondary:hover, .btn-secondary:active {
+  border: 2px solid #765933;
+  background-color: #765933;
+}
+.small-text {
+  font-size: 14px;
+}
+.heart {
+  color: #299f31;
+}
+.header-navigation-link:hover, .header-navigation-link:active, .footer-navigation-link:hover, .footer-navigation-link:active {
+  text-decoration: underline;
+}
+/* ---------HEADINGS-------- */
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #3c3c3c;
+}
+h1 {
+  font-size: 6.2rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 4rem;
+}
+h4 {
+  font-size: 3.2REM;
+}
+p {
+  line-height: 1.5;
+}
+/* ---------NAV BAR--------- */
+
+.banner {
+  text-align: center;
+  background-color: #3c3c3c;
+  color: #ffffff;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.navigation-bar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-bottom: 2px solid #fff2d2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-shrink: 0;
+}
+.header-nav {
+  display: flex;
+  text-align: center;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+/* -------HERO SECTION-------- */
+
+.hero-section {
+  background: url(images/hero-section-bg.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 150px);
+  margin-bottom: 10rem;
+  position: relative;
+  color: #ffffff;
+}
+.dumptruck-image {
+  position: absolute;
+  bottom: -10rem;
+  right: 5rem;
+  width: 50%;
+}
+.hero-heading-container {
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+  padding: 2rem 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.hero-heading {
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+.services-offered-heading, .services-offered-heading-bottom {
+  color: #fff2d2;
+}
+.services-offered-heading-bottom {
+  margin-bottom: 3rem;
+}
+.hero-paragraph {
+  margin-bottom: 3rem;
+}
+.hero-nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+/* ------------MAIN------------- */
+.main-section-container {
+  margin: 0 auto;
+  max-width: 1200px; 
+  width: 90%;
+}
+.main-heading {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.services-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 10rem;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 30rem;
+}
+.services {
+  margin-bottom: 3rem;
+}
+.services-image {
+  max-width: 400px;
+  width: 100%;
+}
+.grid-swap {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+/* -------------CTA SECTION----------- */
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rem;
+}
+.cta-card {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #299f31;
+  color: #ffffff;
+  text-align: center;
+  padding: 15rem 15rem;
+  border-radius: 20px;
+}
+.cta-heading {
+  margin-bottom: 5rem;
+  color: #ffffff;
+}
+/* -------------FOOTER SECTION----------- */
+.footer-section {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #cdcdcd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-media-icons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.icon {
+  width: 20px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
