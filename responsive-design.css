@@ -181,6 +181,7 @@
     padding-left: 5rem;
     padding-right: 5rem;
     position: fixed;
+    z-index: 100;
   }
   .nav-link {
     display: none;
@@ -193,8 +194,8 @@
   max-width: 450px;
   width: 100%;
   position: fixed;
-  z-index: 100;
-  top: 50px;
+  z-index: 90;
+  top: 0;
   right: -450px;
   display: flex;
   gap: 5rem;
