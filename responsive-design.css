@@ -1,0 +1,332 @@
+
+
+@media (max-width: 125rem) {
+  /* i want the breakpoint at 2000px, so 
+  2000px / 16px =  125rem*/
+  html {
+    font-size: 62.5%;
+  }
+  .hero-heading-container {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-heading-br {
+    display: none;
+  }
+}
+@media (max-width: 107rem) {
+  /* i want the breakpoint at 1700px(my laptop), so 
+  1700px / 16px =  107rem
+  base-font: 9px*/
+  html {
+    font-size: 62.5%;
+  }
+  .hero-heading-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.60);
+  }
+  .dumptruck-image {
+    width: 50%;
+  }
+}
+@media (max-width: 97rem) {
+  /* i want the breakpoint at 1550px, so 
+  1550px / 16px =  97rem
+  base font: 10px*/
+  html {
+    font-size: 62.5%;
+  }
+  .hero-heading-container {
+    min-width: 75rem;
+  }
+  .dumptruck-image {
+    width: 60%;
+  }
+}
+@media (max-width: 79rem) {
+  /* i want the breakpoint at 1250px, so 
+  1250px / 16px =  97rem
+  base font: 10px*/
+  html {
+    font-size: 62.5%;
+  }
+  
+  .hero-heading-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .dumptruck-image {
+    width: 65%;
+  }
+}
+@media (max-width: 69rem) {
+  /* i want the breakpoint at 1100px, so 
+  1100px / 16px =  97rem
+  base font: 9px*/
+  html {
+    font-size: 56.25%;
+  }
+  .banner {
+    display: none;
+  }
+  .navigation-bar {
+    height: 80px;
+  }
+  .leinel-logo-with-text {
+    width: 24rem;
+  }
+  .hero-section {
+    height: calc(100vh - 70px);
+    overflow: hidden;
+  }
+  .hero-heading-container {
+    text-align: center;
+    top: 45%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .heading-break {
+    display: none;
+  }
+  .dumptruck-image {
+    top: 50%;
+    bottom: 50%;
+    transform: translate(10%, -50%);
+    overflow: none;
+  }
+  .services-section {
+    column-gap: 3rem;
+    row-gap: 5rem;
+  }
+  .cta-card {
+    padding: 10rem 5rem;
+  }
+}
+@media (max-width: 54rem) {
+  /* i want the breakpoint at 850px, so 
+  850px / 16px =  97rem
+  base font: 8px*/
+  html {
+    font-size: 50%;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+  .hero-section {
+    background: url(images/leinel-bg-tablet2.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .dumptruck-image {
+    display: none;
+  }
+}
+@media (max-width: 42rem) {
+  /* i want the breakpoint at 670px, so 
+  720px / 16px =  97rem
+  base font: 7px*/
+  html {
+    font-size: 43.75%;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  .services-section {
+    column-gap: 2rem;
+    row-gap: 3rem;
+    margin-bottom: 15rem;
+  }
+  .cta-section {
+    margin-bottom: 20rem;
+  }
+  .cta-card {
+    padding: 8rem 8rem;
+  }
+}
+@media (max-width: 35rem) {  /*show the hamburger icon here*/
+  /* i want the breakpoint at 550px, so 
+  550px / 16px =  35rem
+  base font: 6px*/
+  html {
+    font-size: 37.5%;
+  }
+  .navigation-bar {
+    justify-content: space-between;
+    height: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: fixed;
+    z-index: 100;
+  }
+  .nav-link {
+    display: none;
+  }
+  .off-screen-menu {
+  color: #ffffff;
+  background-color: #3c3c3c;
+  height: 100vh;
+  max-width: 350px;
+  width: 100%;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  right: -450px;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
+  transition: .5s ease;
+}
+.off-screen-menu.active {
+  right: 0;
+}
+
+.ham-menu {
+  height: 30px;
+  width: 30px;
+  margin-left: auto;
+  position: relative;
+}
+.ham-menu span {
+  height: 3px;
+  width: 100%;
+  background-color: #218228;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+  .hero-section {
+    height: calc(75vh - 70px);
+    margin-bottom: 10rem;
+  }
+  .hero-heading-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main-heading {
+    font-size: 4.8rem;
+  }
+  .main-heading-paragraph {
+    font-size: 14px;
+  }
+  .services-section-title {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+  .services-section {
+    grid-template-columns: 1fr;
+  }
+  .grid-swap {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .services-desc {
+    font-size: 2.4rem;
+  }
+  .services-section {
+    margin-bottom: 10rem;
+  }
+  .cta-section {
+  margin-bottom: 25rem;
+  }
+  .leinel-logo-sm {
+  width: 80px;
+  margin: 1.5rem auto;
+  }
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+@media (max-width: 27rem) {
+  /* i want the breakpoint at 420px, so 
+  420px / 16px =  27rem
+  base font: 5px*/
+  html {
+    font-size: 37.5%;
+  }
+  .hero-heading-container {
+    width: 90%;
+    min-width: 0;
+  }
+  .hero-heading {
+    font-size: 4rem;
+  }
+  .services-offered-heading {
+    font-size: 3.2rem;
+  }
+  .services-offered-heading-bottom {
+    margin-bottom: 2rem;
+  }
+  .main-heading {
+      font-size: 4.8rem;
+  }
+  .services-desc {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 22rem) {
+  /* i want the breakpoint at 350px, so 
+  350px / 16px =  22rem
+  base font: 5px*/
+  html {
+    font-size: 31.5%;
+  }
+}
+@media (max-height: 32rem) {
+  
+  .leinel-logo-with-text {
+    width: 20rem;
+  }
+
+  .hero-heading-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-heading {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+  .services-offered-heading {
+    font-size: 3.2rem;
+  }
+  .services-offered-heading-bottom {
+    margin-bottom: 2rem;
+  }
+  .btn {
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+}
