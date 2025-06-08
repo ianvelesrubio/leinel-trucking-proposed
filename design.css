@@ -141,7 +141,6 @@ a:hover, a:active {
 }
 .card-list .card-link .card-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 20px;
 }
