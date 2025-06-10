@@ -1,0 +1,179 @@
+
+@media (max-width: 69rem) {
+  /* i want the breakpoint at 1100px, so 
+  1100px / 16px =  97rem
+  base font: 9px*/
+  html {
+    font-size: 56.25%;
+  }
+
+  .navigation-bar {
+    height: 80px;
+  }
+  .leinel-logo-with-text {
+    width: 24rem;
+  }
+  .cta-card {
+    padding: 10rem 5rem;
+  }
+}
+@media (max-width: 54rem) {
+  /* i want the breakpoint at 850px, so 
+  850px / 16px =  97rem
+  base font: 8px*/
+  html {
+    font-size: 50%;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
+@media (max-width: 42rem) {
+  /* i want the breakpoint at 670px, so 
+  720px / 16px =  97rem
+  base font: 7px*/
+  html {
+    font-size: 43.75%;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  .cta-section {
+    margin-bottom: 20rem;
+  }
+  .cta-card {
+    padding: 8rem 8rem;
+  }
+}
+@media (max-width: 35rem) {  /*show the hamburger icon here*/
+  /* i want the breakpoint at 550px, so 
+  550px / 16px =  35rem
+  base font: 6px*/
+  html {
+    font-size: 37.5%;
+  }
+  body {
+    font-size: 14px;
+  }
+  .navigation-bar {
+    justify-content: space-between;
+    height: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: fixed;
+    z-index: 100;
+  }
+  .nav-link {
+    display: none;
+  }
+  .off-screen-menu {
+  color: #ffffff;
+  background-color: #3c3c3c;
+  height: 100vh;
+  max-width: 350px;
+  width: 100%;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  right: -450px;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
+  transition: .5s ease;
+}
+.off-screen-menu.active {
+  right: 0;
+}
+
+.ham-menu {
+  height: 30px;
+  width: 30px;
+  margin-left: auto;
+  position: relative;
+}
+.ham-menu span {
+  height: 3px;
+  width: 100%;
+  background-color: #218228;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+  .leinel-logo-sm {
+  width: 80px;
+  margin: 1.5rem auto;
+  }
+  .about-us-heading {
+    text-align: center;
+  }
+  .about-us-img {
+    max-width: 350px;
+  }
+  .about-us-grid {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+    margin-bottom: 5rem;
+  }
+  .about-us-section {
+    grid-template-columns: 1fr;
+    row-gap: 10rem;
+  }
+  .owners-section {
+    grid-template-columns: 1fr;
+    row-gap: 10rem;
+  }
+  .owner-heading {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 27rem) {
+  /* i want the breakpoint at 420px, so 
+  420px / 16px =  27rem
+  base font: 5px*/
+  html {
+    font-size: 37.5%;
+  }
+}
+@media (max-width: 22rem) {
+  /* i want the breakpoint at 350px, so 
+  350px / 16px =  22rem
+  base font: 5px*/
+  html {
+    font-size: 31.5%;
+  }
+}
+@media (max-height: 32rem) {
+  
+  .leinel-logo-with-text {
+    width: 20rem;
+  }
+  .btn {
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+  }
+}
